@@ -24,13 +24,7 @@ Around 1400 Mb.
 
 ## Build image
 
-### Command line
-
-:computer: `docker pull marchandd/term_ssh_root_wine > build.log`
-
-### Command line explanation
-
-Search password value into build.log file to access later to container.
+All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
 ### Firewall
 
@@ -39,51 +33,27 @@ deny,
 you will have to disable 22 port filtering:  
 - Make a new rule for OpenSSH (22/TCP) to enable outgoing policy.
 
-## Build container
+## Build container (standalone mode only)
 
-### Command line
+Not necessary to do if you want only to run Portable-Apps Samples image...         
+Standalone mode only if you want to do software install by yourself.
 
-:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 marchandd/term_ssh_root_wine`
+All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
-Where XXX.XXX.XXX.XXX is your IP v4 address.  
-Where YYYYY is your Private port, if you doesn't know free port, try from 49200...
+## Container usage (standalone mode only)
 
-### Command line explanation
-
-- Run in detached mode.
-- Export port 22.
-
-## Container usage
-
-### SSH access
-
-Open terminal with root/administrator account.
-
-:computer: `ssh -X root@XXX.XXX.XXX.XXX -p YYYYY`
-
-### Alias
-
-When you are into SSH access.
-
-:computer: `firefox`
-
-Wine is installed but need to be initialized before using it with:  
-:computer: `/usr/local/sbin/_installFirst_winetricksOptions.sh`
+All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
 ## Explanations
 
 ### Dockerfile
 
-- Set architecture x86 and point repository to ppa.
-- Install Wine, Winetricks (Wine settings) and CabExtract (for Windows CAB file).
-- Make dynamic root password and display it into logs.
-- Change config for SSH daemon.
-- Give Supervisor management for OpenSSH server.
-- Expose SSH port.
+All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
 ### Display
 
 Make sure to have installed OpenSSH client or GUI SSH client (Putty).
+Wine is installed but need to be initialized before using it.
 
 ### Risks
 
