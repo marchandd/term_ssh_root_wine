@@ -22,9 +22,9 @@ Around 1400 Mb.
 
 [Part of project studies](https://github.com/marchandd/docker_index/ "References")
 
-## Build image
+### Command line
 
-All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
+:computer: `docker pull marchandd/term_ssh_root_wine`
 
 ### Firewall
 
@@ -38,9 +38,16 @@ you will have to disable 22 port filtering:
 Not necessary to do if you want only to run Portable-Apps Samples image...         
 Standalone mode only if you want to do software install by yourself.
 
+:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 marchandd/term_ssh_root_wine`
+
 All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
 ## Container usage (standalone mode only)
+
+Open terminal with root/administrator account.  
+Basic fixed password for Docker public repository = 'term_ssh_root_wine'
+
+:computer: `ssh -X root@XXX.XXX.XXX.XXX -p YYYYY`
 
 All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 

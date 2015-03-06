@@ -44,14 +44,7 @@ Command build image usage
 
 ### Command line
 
-:computer: `docker pull marchandd/term_ssh_root_wine > build.log`
-
-### Command line explanation
-
-First, you build the image with command line above.  
-Then, edit YOUR_DIRECTORY/build.log to find root password access.  
-In case of you doesn't want keep tracks, just leave "> build.log" from command 
-line and search root password access on screen.
+:computer: `docker pull marchandd/term_ssh_root_wine`
 
 Command container usage (standalone mode only)
 ----------------------------------------------
@@ -85,7 +78,7 @@ Open terminal with root/administrator account.
 - Open your Putty GUI SSH client.  
 - Choose X11 forwarding option into SSH/X11 Configuration and type IPv4:XXXXX remote desktop.  
   XXXXX is your private port you have choose previously.  
-- Choose root user and enter password you have find previously.
+- Choose root user and enter password as 'term_ssh_root_wine' for Docker public repository access.
 
 ### Remarks
 
