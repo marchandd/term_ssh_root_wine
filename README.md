@@ -12,7 +12,7 @@ Easy method to produce a GUI containers to access to Wine and able to download a
 
 ### Image size
 
-Around 1400 Mb.
+Around 1250 Mb.
 
 ### References
 
