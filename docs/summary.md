@@ -54,10 +54,12 @@ Standalone mode only if you want to do software install by yourself.
 
 ### Command line
 
-:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 marchandd/term_ssh_root_wine`
+:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 -v LOCALPATH:/data  marchandd/term_ssh_root_wine`
 
 Where XXX.XXX.XXX.XXX is your IP v4 address.  
 Where YYYYY is your Private port, if you doesn't know free port, try from 49200...
+In case you doesn't want to share data, just leave "-v LOCALPATH:/data" 
+from command line.
 
 ### Command line explanation
 
@@ -89,4 +91,5 @@ Now you can try entering "winefile" to verify every thing are functional.
 
 or you can test with my proper config:  
 When you are into SSH access.  
-:computer: `/usr/local/sbin/_installFirst_winetricksOptions.sh`
+:computer: `/usr/local/sbin/_installFirst_winetricksOptions.sh`  
+If '/data/' directory is presents into container, a symbolic link is created with "C:\users\Public\Documents" available on Windows Portable-apps.

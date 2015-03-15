@@ -38,7 +38,7 @@ you will have to disable 22 port filtering:
 Not necessary to do if you want only to run Portable-Apps Samples image...         
 Standalone mode only if you want to do software install by yourself.
 
-:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 marchandd/term_ssh_root_wine`
+:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 -v LOCALPATH:/data marchandd/term_ssh_root_wine`
 
 All details on [docs](https://github.com/marchandd/term_ssh_root_wine/blob/master/docs/summary.md "Summary")
 
