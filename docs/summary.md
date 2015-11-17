@@ -54,7 +54,7 @@ Standalone mode only if you want to do software install by yourself.
 
 ### Command line
 
-:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 -v LOCALPATH:/data  marchandd/term_ssh_root_wine`
+:computer: `docker run -d -p XXX.XXX.XXX.XXX:YYYYY:22 --name latest_term_ssh_root_wine -v LOCALPATH:/data  marchandd/term_ssh_root_wine`
 
 Where XXX.XXX.XXX.XXX is your IP v4 address.  
 Where YYYYY is your Private port, if you doesn't know free port, try from 49200...

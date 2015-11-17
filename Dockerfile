@@ -1,6 +1,6 @@
-FROM ubuntu:14.10
+FROM ubuntu
 MAINTAINER Marchand D. https://github.com/marchandd/term_ssh_root_wine
-ENV VE_version="MarchandD_20150315_v01.02"
+ENV VE_version="MarchandD_20151117_v02.01" 
 # i386 usage
 RUN dpkg --add-architecture i386
 RUN apt-get update && apt-get install -y openssh-server firefox supervisor dbus-x11 pwgen
